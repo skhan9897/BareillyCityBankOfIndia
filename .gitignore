@@ -1,0 +1,34 @@
+# Target & Build Folders
+target/
+build/
+bin/
+out/
+.gradle/
+.artifacts/
+**/build/
+**/target/
+**/bin/
+**/out/
+
+# Android Specific
+.navigation/
+captures/
+.externalNativeBuild
+.cxx/
+local.properties
+**/local.properties
+
+# IntelliJ & IDE Files
+.idea/
+*.iml
+*.iws
+*.ipr
+nb-configuration.xml
+
+# Log & Temp Files
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db

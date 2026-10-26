@@ -1,0 +1,10 @@
+.git
+.gitignore
+.idea
+target/
+build/
+.gradle/
+.artifacts/
+BareiilyCityBankOfIndia_Android_app/
+*.iml
+*.log

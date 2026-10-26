@@ -1,0 +1,10 @@
+<resources>
+    <color name="bank_navy">#0A2540</color>
+    <color name="bank_navy_dark">#051428</color>
+    <color name="bank_blue">#1A5276</color>
+    <color name="bank_gold">#FFC107</color>
+    <color name="bank_dark_gold">#D4AC0D</color>
+    <color name="bank_light_bg">#F4F6F9</color>
+    <color name="bank_success">#27AE60</color>
+    <color name="bank_danger">#E74C3C</color>
+</resources>

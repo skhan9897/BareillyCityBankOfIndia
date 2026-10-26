@@ -1,0 +1,34 @@
+# Render.yaml - Blueprint Deployment Configuration for BAREILLY CITY BANK OF INDIA
+
+services:
+  # 1. Main Java Web Application (Tomcat 9 Docker Web Service)
+  - type: web
+    name: bareilly-city-bank
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: singapore
+    healthCheckPath: /
+    envVars:
+      - key: DB_URL
+        fromDatabase:
+          name: bareilly-bank-db
+          property: connectionString
+      - key: DB_USERNAME
+        fromDatabase:
+          name: bareilly-bank-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: bareilly-bank-db
+          property: password
+      - key: BANK_NAME
+        value: "BAREILLY CITY BANK OF INDIA"
+
+databases:
+  # 2. Managed MySQL 8 Database Service
+  - name: bareilly-bank-db
+    databaseName: bareilly_bank
+    user: root
+    plan: free
+    region: singapore

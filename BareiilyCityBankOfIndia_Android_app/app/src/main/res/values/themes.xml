@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.BareillyCityBank" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/bank_navy</item>
+        <item name="android:navigationBarColor">@color/bank_navy_dark</item>
+    </style>
+</resources>

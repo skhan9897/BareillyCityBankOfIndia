@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="30%" stop-color="#FFC107" />
+      <stop offset="70%" stop-color="#FF9800" />
+      <stop offset="100%" stop-color="#B78103" />
+    </linearGradient>
+
+    <!-- Royal Navy Gradient -->
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2540" />
+      <stop offset="50%" stop-color="#0F3860" />
+      <stop offset="100%" stop-color="#051424" />
+    </linearGradient>
+
+    <!-- Metallic Shine -->
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF5CC" />
+      <stop offset="50%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#C59B27" />
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Circular Text Paths -->
+    <path id="textArcTop" d="M 65, 250 A 185, 185 0 1, 1 435, 250" fill="none"/>
+    <path id="textArcBottom" d="M 435, 250 A 185, 185 0 0, 1 65, 250" fill="none"/>
+  </defs>
+
+  <!-- Outer Golden Ring -->
+  <circle cx="250" cy="250" r="240" fill="url(#goldGrad)" filter="url(#shadow)" />
+  <circle cx="250" cy="250" r="232" fill="#0A2540" />
+
+  <!-- Inner Navy Ring with Circular Text -->
+  <circle cx="250" cy="250" r="225" fill="url(#navyGrad)" />
+  <circle cx="250" cy="250" r="170" fill="url(#goldGrad)" />
+  <circle cx="250" cy="250" r="162" fill="#FFFFFF" />
+
+  <!-- Circular Text -->
+  <text font-family="'Arial Black', sans-serif" font-weight="900" font-size="25" fill="url(#shineGrad)" letter-spacing="3">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">BAREILLY CITY BANK OF INDIA</textPath>
+  </text>
+
+  <text font-family="'Arial', sans-serif" font-weight="700" font-size="18" fill="#FFFFFF" letter-spacing="4">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">SAFE  |  SECURE  |  GROW TOGETHER</textPath>
+  </text>
+
+  <!-- Side Stars & Laurels -->
+  <g fill="url(#goldGrad)">
+    <!-- Left Star -->
+    <path d="M 72 250 l 6 -12 l 12 -2 l -9 -9 l 2 -12 l -11 6 l -11 -6 l 2 12 l -9 9 l 12 2 z" />
+    <!-- Right Star -->
+    <path d="M 428 250 l 6 -12 l 12 -2 l -9 -9 l 2 -12 l -11 6 l -11 -6 l 2 12 l -9 9 l 12 2 z" />
+  </g>
+
+  <!-- Center Artwork: Sunburst, Skyline & Stylized B Monogram -->
+  <g transform="translate(110, 100)">
+    <!-- Sunburst -->
+    <circle cx="140" cy="80" r="45" fill="#FFE5A3" opacity="0.6"/>
+    <path d="M 140 20 L 140 140 M 80 80 L 200 80 M 98 38 L 182 122 M 182 38 L 98 122" stroke="#FFC107" stroke-width="2" opacity="0.4"/>
+
+    <!-- Clock Tower & City Skyline Silhouette -->
+    <path d="M 180 140 L 180 90 L 195 70 L 210 90 L 210 140 M 190 85 h 10 v 15 h -10 z" fill="#0A2540" opacity="0.85"/>
+    <path d="M 215 140 L 215 105 L 230 95 L 245 105 L 245 140" fill="#0A2540" opacity="0.7"/>
+
+    <!-- Stylized 3D Monogram B -->
+    <path d="M 30 140 V 20 C 70 20, 130 25, 130 65 C 130 85, 110 100, 85 102 C 120 105, 145 125, 145 155 C 145 195, 80 200, 30 200 Z" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="6"/>
+
+    <!-- Gold Swooshes across B -->
+    <path d="M 10 120 Q 70 60 160 110 Q 110 135 10 120 Z" fill="url(#goldGrad)"/>
+    <path d="M 15 145 Q 85 95 175 140 Q 120 160 15 145 Z" fill="url(#goldGrad)"/>
+
+    <!-- Brand Typography inside center -->
+    <text x="140" y="222" font-family="'Georgia', serif" font-weight="900" font-size="28" fill="#0A2540" text-anchor="middle" letter-spacing="1">BAREILLY<tspan fill="#B78103">CITY</tspan></text>
+    <text x="140" y="242" font-family="'Arial Black', sans-serif" font-weight="900" font-size="16" fill="#0A2540" text-anchor="middle" letter-spacing="2">BANK OF INDIA</text>
+    <line x1="20" y1="248" x2="260" y2="248" stroke="#B78103" stroke-width="2"/>
+    <text x="140" y="260" font-family="'Arial', sans-serif" font-weight="700" font-size="10" fill="#B78103" text-anchor="middle" letter-spacing="2">YOUR TRUST OUR STRENGTH</text>
+  </g>
+</svg>

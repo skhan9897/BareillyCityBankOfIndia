@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051428" />
+      <stop offset="40%" stop-color="#0A2D52" />
+      <stop offset="80%" stop-color="#083B6F" />
+      <stop offset="100%" stop-color="#041C38" />
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldBannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF3C4" />
+      <stop offset="30%" stop-color="#FFD700" />
+      <stop offset="70%" stop-color="#FFB300" />
+      <stop offset="100%" stop-color="#D49A00" />
+    </linearGradient>
+
+    <!-- Glass Building Gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#80D8FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0288D1" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="500" fill="url(#bgGrad)" />
+
+  <!-- Gold Decorative Wave Swooshes Top & Bottom -->
+  <path d="M 0 0 C 400 120, 900 -50, 1600 40 L 1600 0 Z" fill="url(#goldBannerGrad)" opacity="0.3"/>
+  <path d="M 0 460 C 500 430, 1100 520, 1600 450 L 1600 500 L 0 500 Z" fill="url(#goldBannerGrad)"/>
+
+  <!-- LEFT SIDE: Official Circular Golden Emblem Seal -->
+  <g transform="translate(30, 60) scale(0.72)">
+    <circle cx="250" cy="250" r="230" fill="url(#goldBannerGrad)" filter="url(#glow)" />
+    <circle cx="250" cy="250" r="215" fill="#0A2D52" />
+    <circle cx="250" cy="250" r="170" fill="#FFFFFF" />
+    <!-- B Monogram -->
+    <path d="M 180 120 V 320 C 230 320, 310 310, 310 240 C 310 200, 270 185, 240 182 C 280 178, 300 150, 300 120 C 300 80, 240 70, 180 70 Z" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="8"/>
+    <path d="M 120 230 Q 230 140, 370 210 Q 280 260, 120 230 Z" fill="url(#goldBannerGrad)"/>
+    <text x="250" y="380" font-family="'Georgia', serif" font-weight="900" font-size="36" fill="#0A2D52" text-anchor="middle">BAREILLY<tspan fill="#D49A00">CITY</tspan></text>
+    <text x="250" y="410" font-family="'Arial Black', sans-serif" font-weight="900" font-size="20" fill="#0A2D52" text-anchor="middle">BANK OF INDIA</text>
+  </g>
+
+  <!-- CENTER HEADER TYPOGRAPHY -->
+  <g transform="translate(420, 65)">
+    <text x="380" y="45" font-family="'Arial Black', sans-serif" font-weight="900" font-size="44" fill="url(#goldBannerGrad)" letter-spacing="3" text-anchor="middle" filter="url(#glow)">BAREILLY CITY BANK OF INDIA</text>
+    <line x1="80" y1="60" x2="680" y2="60" stroke="url(#goldBannerGrad)" stroke-width="3"/>
+    <text x="380" y="82" font-family="'Georgia', serif" font-weight="700" font-size="20" fill="#FFFFFF" letter-spacing="4" text-anchor="middle">YOUR TRUST OUR STRENGTH</text>
+
+    <!-- Pill Badge -->
+    <rect x="230" y="98" width="300" height="34" rx="17" fill="url(#goldBannerGrad)"/>
+    <text x="380" y="121" font-family="'Arial', sans-serif" font-weight="800" font-size="15" fill="#051428" text-anchor="middle">A Secure Tomorrow, Together</text>
+  </g>
+
+  <!-- SERVICE ICONS ROW -->
+  <g transform="translate(420, 220)">
+    <!-- 10 Circle Icons -->
+    <g transform="translate(0,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">🐷</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Savings</text></g>
+    <g transform="translate(70,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">🏛️</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Current</text></g>
+    <g transform="translate(140,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">🔒</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Fixed Dep</text></g>
+    <g transform="translate(210,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">📈</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Recurring</text></g>
+    <g transform="translate(280,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">💸</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Transfer</text></g>
+    <g transform="translate(350,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">💳</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Debit Card</text></g>
+    <g transform="translate(420,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">📲</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">UPI Pay</text></g>
+    <g transform="translate(490,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">🤝</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Loans</text></g>
+    <g transform="translate(560,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">📄</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Bill Pay</text></g>
+    <g transform="translate(630,0)"><circle cx="25" cy="25" r="22" fill="#0A2D52" stroke="url(#goldBannerGrad)" stroke-width="2"/><text x="25" y="32" font-size="18" text-anchor="middle">🎧</text><text x="25" y="62" font-family="Arial" font-size="10" fill="#FFF" text-anchor="middle">Support</text></g>
+  </g>
+
+  <!-- CENTER BUILDING GRAPHIC: Modern Bank Branch -->
+  <g transform="translate(450, 310)">
+    <!-- Building glass structure -->
+    <rect x="0" y="0" width="380" height="140" fill="url(#glassGrad)" stroke="#B3E5FC" stroke-width="3"/>
+    <!-- Windows Grid -->
+    <path d="M 0 35 H 380 M 0 70 H 380 M 0 105 H 380 M 90 0 V 140 M 180 0 V 140 M 270 0 V 140" stroke="#E0F7FA" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- RIGHT SIDE: Mobile App Mockup Frame -->
+  <g transform="translate(1250, 110)">
+    <rect x="0" y="0" width="160" height="310" rx="25" fill="#051428" stroke="url(#goldBannerGrad)" stroke-width="4"/>
+    <rect x="10" y="15" width="140" height="280" rx="15" fill="#FFFFFF"/>
+    <!-- Screen Header -->
+    <rect x="10" y="15" width="140" height="50" rx="10" fill="#0A2D52"/>
+    <text x="80" y="45" font-family="Arial" font-weight="bold" font-size="10" fill="url(#goldBannerGrad)" text-anchor="middle">BAREILLY BANK APP</text>
+    <!-- Screen Action Buttons -->
+    <rect x="25" y="80" width="110" height="30" rx="15" fill="#0F3860"/>
+    <text x="80" y="100" font-family="Arial" font-size="11" fill="#FFF" font-weight="bold" text-anchor="middle">Login to App</text>
+    <!-- Grid Icons -->
+    <rect x="25" y="130" width="45" height="45" rx="8" fill="#F0F4F8"/><text x="47" y="158" font-size="18" text-anchor="middle">💸</text>
+    <rect x="90" y="130" width="45" height="45" rx="8" fill="#F0F4F8"/><text x="112" y="158" font-size="18" text-anchor="middle">📄</text>
+    <rect x="25" y="190" width="45" height="45" rx="8" fill="#F0F4F8"/><text x="47" y="218" font-size="18" text-anchor="middle">🔒</text>
+    <rect x="90" y="190" width="45" height="45" rx="8" fill="#F0F4F8"/><text x="112" y="218" font-size="18" text-anchor="middle">🤝</text>
+  </g>
+
+  <!-- BOTTOM RIBBON -->
+  <g transform="translate(0, 470)">
+    <text x="800" y="18" font-family="'Arial', sans-serif" font-weight="800" font-size="15" fill="#051428" text-anchor="middle" letter-spacing="2">
+      🛡️ Safe Banking  |  🔒 Secure Transactions  |  👥 Customer First  |  📈 Digital Banking  |  🤝 Stronger Community
+    </text>
+  </g>
+</svg>
