@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Deploy WAR file to Tomcat 9 Application Server
-FROM tomcat:9.0.86-jdk17-temurin-alpine
+FROM tomcat:9.0-jre17-temurin
 WORKDIR /usr/local/tomcat
 
 # Remove default ROOT application
